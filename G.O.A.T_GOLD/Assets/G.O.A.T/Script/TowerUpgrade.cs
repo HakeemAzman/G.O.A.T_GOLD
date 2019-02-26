@@ -23,9 +23,12 @@ public class TowerUpgrade : MonoBehaviour
     public Text upgradeText;
     public Text seaLevel;
 
+    AudioSource waterAudio;
+
     // Use this for initialization
     void Start()
     {
+        waterAudio = GetComponent<AudioSource>();
         cs = FindObjectOfType<CurrencySystem>();
         anim = GetComponent<Animator>();
         isUpgradable = false;
@@ -59,6 +62,7 @@ public class TowerUpgrade : MonoBehaviour
 
             if (isUpgradable == true)
             {
+                waterAudio.Play();
                 cs.bubblesCount -= 100;
                 anim.SetBool("canUpgrade", true);
                 isUpgradable2 = true;
@@ -73,6 +77,7 @@ public class TowerUpgrade : MonoBehaviour
     {
         if (cs.bubblesCount >= 250 && isUpgradable2)
         {
+            waterAudio.Play();
             anim.SetBool("canUpgrade", false);
             cs.bubblesCount -= 250;
             anim.SetBool("canUpgrade2", true);
@@ -87,6 +92,7 @@ public class TowerUpgrade : MonoBehaviour
     {
         if (cs.bubblesCount >= 400 && isUpgradable3)
         {
+            waterAudio.Play();
             anim.SetBool("canUpgrade2", false);
             cs.bubblesCount -= 400;
             anim.SetBool("canUpgrade3", true);
@@ -101,6 +107,7 @@ public class TowerUpgrade : MonoBehaviour
     {
         if (cs.bubblesCount >= 550 && isUpgradable4)
         {
+            waterAudio.Play();
             anim.SetBool("canUpgrade3", false);
             cs.bubblesCount -= 550;
             anim.SetBool("canUpgrade4", true);
