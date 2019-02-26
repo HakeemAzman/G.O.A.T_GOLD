@@ -6515,7 +6515,7 @@ GameObject:
   - component: {fileID: 328890686}
   - component: {fileID: 328890685}
   m_Layer: 0
-  m_Name: Encyclopedia Btn
+  m_Name: Skip Tutorial Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6538,7 +6538,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000061035156, y: -23.69999}
-  m_SizeDelta: {x: 310.59, y: 92.2}
+  m_SizeDelta: {x: 331.4, y: 92.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328890685
 MonoBehaviour:
@@ -6580,7 +6580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 945090087}
-        m_MethodName: ToEncyclopedia
+        m_MethodName: SkipTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16761,7 +16761,7 @@ RectTransform:
   - {fileID: 1627115707}
   - {fileID: 2103529809}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17660,7 +17660,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894570614}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18804,7 +18804,7 @@ RectTransform:
   - {fileID: 1737199957}
   - {fileID: 1626751638}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18841,7 +18841,6 @@ RectTransform:
   m_Children:
   - {fileID: 1299070481}
   - {fileID: 192532776}
-  - {fileID: 1913196117}
   - {fileID: 1932612813}
   - {fileID: 1208034868}
   - {fileID: 2014513410}
@@ -18855,6 +18854,7 @@ RectTransform:
   - {fileID: 1658090440}
   - {fileID: 2141619426}
   - {fileID: 1012656736}
+  - {fileID: 1913196117}
   m_Father: {fileID: 342068421}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19733,7 +19733,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894570614}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -21154,7 +21154,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894570614}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25501,7 +25501,7 @@ RectTransform:
   m_Children:
   - {fileID: 1631401417}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27683,7 +27683,7 @@ RectTransform:
   - {fileID: 1676319278}
   - {fileID: 948325050}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -28277,7 +28277,7 @@ RectTransform:
   - {fileID: 171205380}
   - {fileID: 88876967}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33513,7 +33513,7 @@ RectTransform:
   - {fileID: 830829730}
   - {fileID: 480289931}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34045,7 +34045,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894570614}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37412,7 +37412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ENCYCLOPEDIA
+  m_Text: SKIP TUTORIAL
 --- !u!222 &1842664476
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38729,7 +38729,7 @@ RectTransform:
   - {fileID: 1467057638}
   - {fileID: 328890684}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 2
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38949,6 +38949,7 @@ GameObject:
   - component: {fileID: 1921679409}
   - component: {fileID: 1921679408}
   - component: {fileID: 1921679407}
+  - component: {fileID: 1921679410}
   m_Layer: 0
   m_Name: Resume Btn
   m_TagString: Untagged
@@ -39061,6 +39062,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921679405}
   m_CullTransparentMesh: 0
+--- !u!95 &1921679410
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921679405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 761f3ab226fbc4e409ac8df3cd629f11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1929207489
 GameObject:
   m_ObjectHideFlags: 0
@@ -39241,7 +39260,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894570614}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40954,7 +40973,7 @@ RectTransform:
   - {fileID: 1976693380}
   - {fileID: 79397548}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -43966,7 +43985,7 @@ RectTransform:
   - {fileID: 1538346923}
   - {fileID: 905513789}
   m_Father: {fileID: 894570614}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

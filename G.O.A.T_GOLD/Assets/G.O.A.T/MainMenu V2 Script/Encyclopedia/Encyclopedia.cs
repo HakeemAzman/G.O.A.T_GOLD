@@ -31,7 +31,8 @@ public class Encyclopedia : MonoBehaviour {
             SceneManager.LoadScene("MainMenu");            
         }
         */
-        SceneManager.LoadScene("MainLevel");
+        SceneManager.LoadScene("MainMenu");
     }
     
 }
+ 

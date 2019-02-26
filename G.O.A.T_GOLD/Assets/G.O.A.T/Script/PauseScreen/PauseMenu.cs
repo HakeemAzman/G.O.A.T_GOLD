@@ -57,6 +57,11 @@ public class PauseMenu : MonoBehaviour {
         StartCoroutine(waitTransition());
     }
 
+    public void SkipTutorial()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainLevel");
+    }
 
     IEnumerator waitTransition()
     {
