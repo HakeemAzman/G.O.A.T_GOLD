@@ -41985,6 +41985,7 @@ GameObject:
   - component: {fileID: 1190085406}
   - component: {fileID: 1190085405}
   - component: {fileID: 1190085404}
+  - component: {fileID: 1190085407}
   m_Layer: 0
   m_Name: Transition
   m_TagString: Untagged
@@ -42062,6 +42063,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1190085402}
   m_CullTransparentMesh: 0
+--- !u!114 &1190085407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190085402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f889b59c83bea409ace27ff3ec0aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionStart: {fileID: 1190085402}
 --- !u!4 &1192542455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 778a3dad803e67841ad132089976b665,
