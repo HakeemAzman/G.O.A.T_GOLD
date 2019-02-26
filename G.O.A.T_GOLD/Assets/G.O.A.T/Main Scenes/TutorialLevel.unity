@@ -34027,6 +34027,7 @@ GameObject:
   - component: {fileID: 1658090443}
   - component: {fileID: 1658090442}
   - component: {fileID: 1658090441}
+  - component: {fileID: 1658090444}
   m_Layer: 0
   m_Name: Transitioning (1)
   m_TagString: Untagged
@@ -34104,6 +34105,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1658090439}
   m_CullTransparentMesh: 0
+--- !u!114 &1658090444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658090439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f889b59c83bea409ace27ff3ec0aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionStart: {fileID: 1658090439}
 --- !u!1 &1659472125
 GameObject:
   m_ObjectHideFlags: 0
