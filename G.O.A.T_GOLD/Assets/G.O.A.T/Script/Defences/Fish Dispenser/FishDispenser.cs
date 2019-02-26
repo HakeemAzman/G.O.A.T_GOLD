@@ -39,7 +39,7 @@ public class FishDispenser : MonoBehaviour
             {
                 
                 spawnTimer = rateOfSpawn;
-                badFish = Instantiate(prefabBadFish, spawnHere.position, spawnHere.rotation);
+                badFish = Instantiate(prefabBadFish, spawnHere.position, spawnHere.rotation * Quaternion.Euler(-90,0,0));
                 audio.Play();
             }
         }

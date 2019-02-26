@@ -18,7 +18,10 @@ public class TowerUpgrade : MonoBehaviour
     public GameObject upgrade4;
     public GameObject newSpawner;
     public GameObject oldSpawner;
+    public GameObject thingsToHide;
+    public GameObject bossSpawning;
     public Text upgradeText;
+    public Text seaLevel;
 
     // Use this for initialization
     void Start()
@@ -42,7 +45,7 @@ public class TowerUpgrade : MonoBehaviour
         if (isUpgradable4)
             upgradeText.text = "550";
 
-        if(isNewSpawner)
+        if (isNewSpawner)
         {
             newSpawner.SetActive(true);
         }
@@ -59,22 +62,24 @@ public class TowerUpgrade : MonoBehaviour
                 cs.bubblesCount -= 100;
                 anim.SetBool("canUpgrade", true);
                 isUpgradable2 = true;
-                upgrade2.gameObject.SetActive(true);
+                StartCoroutine(coolDown());
                 upgrade.gameObject.SetActive(false);
+                seaLevel.text=("Sea Level: 2/5");
             }
         }
     }
 
     public void Upgrade2()
     {
-        if(cs.bubblesCount >= 250 && isUpgradable2)
+        if (cs.bubblesCount >= 250 && isUpgradable2)
         {
             anim.SetBool("canUpgrade", false);
             cs.bubblesCount -= 250;
             anim.SetBool("canUpgrade2", true);
             isUpgradable3 = true;
+            StartCoroutine(coolDown2());
             upgrade2.gameObject.SetActive(false);
-            upgrade3.gameObject.SetActive(true);
+            seaLevel.text = ("Sea Level: 3/5");
         }
     }
 
@@ -86,8 +91,9 @@ public class TowerUpgrade : MonoBehaviour
             cs.bubblesCount -= 400;
             anim.SetBool("canUpgrade3", true);
             isUpgradable4 = true;
+            StartCoroutine(coolDown4());
             upgrade3.gameObject.SetActive(false);
-            upgrade4.gameObject.SetActive(true);
+            seaLevel.text = ("Sea Level: 4/5");
         }
     }
 
@@ -101,13 +107,45 @@ public class TowerUpgrade : MonoBehaviour
             StartCoroutine(DisableUpgrade4());
             isNewSpawner = true;
             oldSpawner.SetActive(false);
+            seaLevel.text = ("Sea Level: 5/5");
+            
+            StartCoroutine(bossSpawnPanelFalse());
         }
     }
 
     IEnumerator DisableUpgrade4()
     {
-        yield return new WaitForSeconds(10f);
-        upgrade4.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
+        thingsToHide.gameObject.SetActive(false);
     }
-    
+    IEnumerator bossSpawnPanelFalse()
+    {
+        bossSpawning.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        bossSpawning.SetActive(false);
+    }
+
+    IEnumerator coolDown()
+    {
+        yield return new WaitForSeconds(5f);
+        upgrade2.gameObject.SetActive(true);
+    }
+
+    IEnumerator coolDown2()
+    {
+        yield return new WaitForSeconds(5f);
+        upgrade3.gameObject.SetActive(true);
+    }
+
+    IEnumerator coolDown3()
+    {
+        yield return new WaitForSeconds(5f);
+        upgrade3.gameObject.SetActive(true);
+    }
+
+    IEnumerator coolDown4()
+    {
+        yield return new WaitForSeconds(5f);
+        upgrade4.gameObject.SetActive(true);
+    }
 }

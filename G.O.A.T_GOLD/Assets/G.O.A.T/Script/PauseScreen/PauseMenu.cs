@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuScreen;
-
+    public GameObject transition;
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape))
@@ -52,8 +52,15 @@ public class PauseMenu : MonoBehaviour {
 
     public void ToMainLevel()
     {
+        transition.gameObject.SetActive(true);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainLevel");
+        StartCoroutine(waitTransition());
     }
 
+
+    IEnumerator waitTransition()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("MainLevel");
+    }
 }

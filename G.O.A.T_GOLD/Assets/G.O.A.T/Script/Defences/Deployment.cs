@@ -98,6 +98,7 @@ public class Deployment : MonoBehaviour
         if (cs.bubblesCount >= 80)
         {
             Deployment.deployScript.fishUpgradeButton.GetComponent<Button>().interactable = true;
+            hasDeploy = true;
             cs.bubblesCount -= 80;
             Instantiate(buildvfx, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1.75f, selectScript.placementPos.z), Quaternion.identity);
             GameObject child = Instantiate(poisonFish, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1f, selectScript.placementPos.z), selectScript.placementRot);
@@ -116,6 +117,7 @@ public class Deployment : MonoBehaviour
         if (cs.bubblesCount >= 100)
         {
             Deployment.deployScript.blastUpgradeButton.GetComponent<Button>().interactable = true;
+            hasDeploy = true;
             cs.bubblesCount -= 100;
             Instantiate(buildvfx, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1.75f, selectScript.placementPos.z), Quaternion.identity);
             GameObject child = Instantiate(blastFurnace, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1f, selectScript.placementPos.z), selectScript.placementRot);
