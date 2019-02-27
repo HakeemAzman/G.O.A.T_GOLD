@@ -39,5 +39,10 @@ public class MainMenuV2 : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
+    public void ToEncyclopedia()
+    {
+        SceneManager.LoadScene("Encyclopedia");
+    }
+
 
 }
