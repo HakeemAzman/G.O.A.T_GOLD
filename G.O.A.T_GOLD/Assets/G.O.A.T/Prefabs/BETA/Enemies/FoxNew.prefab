@@ -2555,8 +2555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b13a0d9bdf2c6d49a6a8b3bbcbf5897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 2
-  enemyFullhealth: 2
+  enemyHealth: 3
+  enemyFullhealth: 3
   damageTaken: 1
   bubbleCurrencyParticle: {fileID: 1313641080188316, guid: 429e0ca68bf9a444495037c67bb6945c,
     type: 2}

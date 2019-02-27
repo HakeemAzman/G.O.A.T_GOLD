@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b8582b716e7504fac3324752344870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 4
-  enemyFullhealth: 4
+  enemyHealth: 20
+  enemyFullhealth: 20
   damageTaken: 1
   bubbleCurrencyParticle: {fileID: 1313641080188316, guid: 429e0ca68bf9a444495037c67bb6945c,
     type: 2}
