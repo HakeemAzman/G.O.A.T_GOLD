@@ -53,6 +53,11 @@ public class BtnManager : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void ToSplashScreen()
+    {
+        SceneManager.LoadScene("SplashScreen");
+    }
+
     public void fastForward()
     {
         if(!isFastForward)

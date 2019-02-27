@@ -361,7 +361,7 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 11042509}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &11042513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23340,7 +23340,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2092606098}
-        m_MethodName: ToMainMenu
+        m_MethodName: ToSplashScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24449,7 +24449,7 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 861006845}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &862920627
 GameObject:
   m_ObjectHideFlags: 0
