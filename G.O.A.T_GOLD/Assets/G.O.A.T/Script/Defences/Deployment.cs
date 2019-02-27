@@ -176,7 +176,7 @@ public class Deployment : MonoBehaviour
         {
             cs.bubblesCount -= 120;
             Instantiate(buildvfx, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1.75f, selectScript.placementPos.z), Quaternion.identity);
-            GameObject child = Instantiate(snowballUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), Quaternion.identity);
+            GameObject child = Instantiate(snowballUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), selectScript.placementRot);
             child.name = "Snowball Turret - Level 2";
             audio.Play();
             selectScript.hitButton = false;
@@ -192,7 +192,7 @@ public class Deployment : MonoBehaviour
         {
             cs.bubblesCount -= 150;
             Instantiate(buildvfx, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1.75f, selectScript.placementPos.z), Quaternion.identity);
-            GameObject child = Instantiate(fishDispenserUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), Quaternion.identity);
+            GameObject child = Instantiate(fishDispenserUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), selectScript.placementRot);
             child.name = "Poison Fish Dispenser - Level 2";
             audio.Play();
             selectScript.hitButton = false;
@@ -208,7 +208,7 @@ public class Deployment : MonoBehaviour
         {
             cs.bubblesCount -= 170;
             Instantiate(buildvfx, new Vector3(selectScript.placementPos.x, selectScript.placementPos.y + 1.75f, selectScript.placementPos.z), Quaternion.identity);
-            GameObject child = Instantiate(blastFurnaceUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), Quaternion.identity);
+            GameObject child = Instantiate(blastFurnaceUpgrade, new Vector3(selectScript.turretPos.x, selectScript.turretPos.y, selectScript.turretPos.z), selectScript.placementRot);
             child.name = "Blast Furnace - Level 2";
             audio.Play();
             selectScript.hitButton = false;

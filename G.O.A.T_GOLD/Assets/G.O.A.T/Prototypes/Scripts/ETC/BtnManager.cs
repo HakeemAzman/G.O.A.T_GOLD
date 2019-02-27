@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BtnManager : MonoBehaviour {
@@ -13,10 +14,17 @@ public class BtnManager : MonoBehaviour {
 
     bool isFastForward;
     public GameObject fastForwardButton;
+    public AudioSource ffAudio;
+    public Text ffText;
 
     private void Awake()
     {
         fastForwardButton.SetActive(false);
+    }
+
+    private void Start()
+    {
+        ffAudio = ffAudio.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -49,12 +57,16 @@ public class BtnManager : MonoBehaviour {
     {
         if(!isFastForward)
         {
+            ffText.text = "Normal Battle Speed!";
+            ffAudio.Play();
             Time.timeScale = 2;
             isFastForward = true;
         }
 
         else if (isFastForward)
         {
+            ffText.text = "Fast Forward Battle!";
+            ffAudio.Play();
             Time.timeScale = 1f;
             isFastForward = false;
         }

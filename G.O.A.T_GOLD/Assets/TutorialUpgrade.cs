@@ -9,10 +9,14 @@ public class TutorialUpgrade : MonoBehaviour {
     public Animator anim;
     public GameObject newSpawner;
     public GameObject oldSpawner;
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    AudioSource waterAudio;
+
+    // Use this for initialization
+    void Start ()
+    {
+        waterAudio = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,6 +25,7 @@ public class TutorialUpgrade : MonoBehaviour {
 
     public void upgrade1()
     {
+        waterAudio.Play();
         anim.SetBool("isUpgrade1", true);
         oldSpawner.SetActive(false);
         newSpawner.SetActive(true);
