@@ -87,7 +87,7 @@ public class TutorialManager : MonoBehaviour {
         if(startButton)
         {
             blinkingReady.SetBool("isReady", true);
-            tutorialText.text = ("Click on the Penguin button on the top left to begin the wave whenever you're done with deploying your defenses!");
+            tutorialText.text = ("Click on the Play button on the top left to begin the wave whenever you're done with deploying your defenses!");
             tutorialBox.SetActive(true);
             
 

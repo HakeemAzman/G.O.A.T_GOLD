@@ -256,7 +256,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -425,6 +425,7 @@ MonoBehaviour:
   hat: {fileID: 1876955425737858}
   winScreen: {fileID: 0}
   healthbar: {fileID: 114762673726143930}
+  isdead: 0
 --- !u!114 &114064782813328022
 MonoBehaviour:
   m_ObjectHideFlags: 1
