@@ -9,6 +9,7 @@ public class SplashScreen : MonoBehaviour
     public Animator transitionToBlack;
     public Animator arcticZen;
     public Animator click;
+    public Animator welcome;
 
     public AudioSource audio;
 
@@ -17,6 +18,7 @@ public class SplashScreen : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        welcome = welcome.GetComponent<Animator>();
         click = click.GetComponent<Animator>();
         arcticZen = arcticZen.GetComponent<Animator>();
         transitionToBlack = transitionToBlack.GetComponent<Animator>();
@@ -34,6 +36,7 @@ public class SplashScreen : MonoBehaviour
 
             StartCoroutine(Proceed());
             audio.Play();
+            welcome.Play("Welcome");
             anim.Play("CameraMove");
             click.Play("Fade");
             arcticZen.Play("ArcticZen");
